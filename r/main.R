@@ -77,7 +77,35 @@ outputBONrFinal <-  cmsy2(
   endb.low = 0.2, endb.hi = 0.7,
   verbose = T)
 
+# Results
 
+#startbio= 0.7 0.9 expert , intbio= 2006 0.1 0.9 expert , endbio= 0.2 0.7 expert 
+#First Monte Carlo filtering of r-k space with  10000  points...
 
+#Found  4058  viable trajectories for 600  r-k pairs
+#---------------------------------------
+#  Catch data used from years 1950 - 2016 
+#Prior initial relative biomass = 0.7 - 0.9 expert 
+#Prior intermediate rel. biomass= 0.1 - 0.9 in year 2006 expert 
+#Prior final relative biomass   = 0.2 - 0.7 expert 
+#Prior range for r = 0.2 - 0.8 default , prior range for k = 66 - 1057 
+#
+#Results of CMSY analysis 
+#-------------------------
+#  Altogether 4058 viable trajectories for 600  r-k pairs were found 
+#r   = 0.505 , 95% CL = 0.336 - 0.759 , k = 202 , 95% CL = 142 - 288 
+#MSY = 25.6 , 95% CL = 22.7 - 28.8 
+#Relative biomass in last year = 0.679 k, 2.5th perc = 0.575 , 97.5th perc = 0.699 
+#Exploitation F/(r/2) in last year = 1.24 
 
+#-------------------------------------------------------------
+#  Fmsy = 0.253 , 95% CL = 0.168 - 0.38 (if B > 1/2 Bmsy then Fmsy = 0.5 r)
+#Fmsy = 0.253 , 95% CL = 0.168 - 0.38 (r and Fmsy are linearly reduced if B < 1/2 Bmsy)
+#MSY  = 25.6 , 95% CL = 22.7 - 28.8 
+#Bmsy = 101 , 95% CL = 71.1 - 144 
+#Biomass in last year = 137 , 2.5th perc = 116 , 97.5 perc = 142 
+#B/Bmsy in last year  = 1.36 , 2.5th perc = 1.15 , 97.5 perc = 1.4 
+#Fishing mortality in last year = 0.314 , 2.5th perc = 0.305 , 97.5 perc = 0.371 
+#Exploitation F/Fmsy  = 1.24 , 2.5th perc = 1.21 , 97.5 perc = 1.47 
 
+save.image(file="/media/josetxu/Seagate Expansion Drive/Segurtasun_2016_20160516/2018_C/proiektuak_berri/bon_gizajoa/data/worksp_20180621.RData")
